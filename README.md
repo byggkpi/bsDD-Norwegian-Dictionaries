@@ -2,7 +2,7 @@
 
 # bsDD Norwegian Dictionaries
 
-Three dictionaries are under test to evaluate the interaction of bsDD and integrating with modelling tools:
+Three dictionaries are under test to evaluate the interaction of bsDD and integrating them with modelling tools:
 
 [ByggKPI Nøkkeltall](https://search.bsdd.buildingsmart.org/uri/byggkpi/bkpi_noekkeltall/0.0) - The goal is to test the possibility to enrich the model at the higher and more abstract level of elements as an example: building, floor, spaces.
 
