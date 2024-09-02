@@ -1,0 +1,890 @@
+{
+  "ModelVersion": "2.0",
+  "OrganizationCode": "byggkpi",
+  "DictionaryCode": "bkpi_beskrivelse",
+  "DictionaryName": "ByggKPI Beskrivelse",
+  "DictionaryVersion": "0.0",
+  "LanguageIsoCode": "nb-NO",
+  "LanguageOnly": false,
+  "UseOwnUri": false,
+  "ChangeRequestEmailAddress": "info@byggkpi.no",
+  "QualityAssuranceProcedure": "Use at own risk - this is for demo purposes only",
+  "ReleaseDate": "2024-08-31T00:00:00",
+  "Status": "Preview",
+  "Classes": [
+    {
+      "Code": "bkpi_Post_Beskrivelse",
+      "Name": "bkpi_Post_Beskrivelse",
+      "ClassType": "GroupOfProperties",
+      "Definition": "Gruppe med informasjon om postbeskrivelse",
+      "RelatedIfcEntityNamesList": [],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO"
+    },
+    {
+      "Code": "Bindingsverk",
+      "Name": "Bindingsverk",
+      "ClassType": "Material",
+      "Definition": "Iht. NS 3420",
+      "RelatedIfcEntityNamesList": [
+        "IfcMaterial"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "ClassProperties": [
+        {
+          "Code": "Bindingsverk-Type bindingsverk",
+          "PropertyCode": "Type bindingsverk",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Bindingsverk-Spikerslag",
+          "PropertyCode": "Spikerslag",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcMaterial",
+          "RelatedClassName": "IfcMaterial"
+        }
+      ]
+    },
+    {
+      "Code": "Sperre",
+      "Name": "Sperre",
+      "ClassType": "Material",
+      "Definition": "Iht. NS 3420",
+      "ParentClassCode": "Bindingsverk",
+      "RelatedIfcEntityNamesList": [
+        "IfcMaterial"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "ClassProperties": [
+        {
+          "Code": "Sperre-Sperretype",
+          "PropertyCode": "Sperretype",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcMaterial",
+          "RelatedClassName": "IfcMaterial"
+        }
+      ]
+    },
+    {
+      "Code": "Trelag",
+      "Name": "Trelag",
+      "ClassType": "Material",
+      "Definition": "Iht. NS 3420",
+      "ParentClassCode": "Bindingsverk",
+      "RelatedIfcEntityNamesList": [
+        "IfcMaterial"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "ClassProperties": [
+        {
+          "Code": "Trelag-Trelag",
+          "PropertyCode": "Trelag",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Trelag-Forbehandling",
+          "PropertyCode": "Forbehandling",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcMaterial",
+          "RelatedClassName": "IfcMaterial"
+        }
+      ]
+    },
+    {
+      "Code": "Fuktbeskyttelse under svill",
+      "Name": "Fuktbeskyttelse under svill",
+      "ClassType": "Material",
+      "Definition": "Iht. NS 3420",
+      "RelatedIfcEntityNamesList": [
+        "IfcMaterial"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "ClassProperties": [
+        {
+          "Code": "Fuktbeskyttelse under svill-Length",
+          "PropertyCode": "Length",
+          "PropertySet": "bkpi_Post_Beskrivelse",
+          "Unit": "m"
+        },
+        {
+          "Code": "Fuktbeskyttelse under svill-Lokalisering",
+          "PropertyCode": "Lokalisering",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Fuktbeskyttelse under svill-Type fuktbeskyttelse",
+          "PropertyCode": "Type fuktbeskyttelse",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Fuktbeskyttelse under svill-Materialkrav",
+          "PropertyCode": "Materialkrav",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Fuktbeskyttelse under svill-Underlag",
+          "PropertyCode": "Underlag",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Fuktbeskyttelse under svill-Andre krav",
+          "PropertyCode": "Andre krav",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcMaterial",
+          "RelatedClassName": "IfcMaterial"
+        }
+      ]
+    },
+    {
+      "Code": "Vind- og fugetering under svill",
+      "Name": "Vind- og fugetering under svill",
+      "ClassType": "Material",
+      "Definition": "Iht. NS 3420",
+      "RelatedIfcEntityNamesList": [
+        "IfcMaterial"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "ClassProperties": [
+        {
+          "Code": "Vind- og fugetering under svill-Length",
+          "PropertyCode": "Length",
+          "PropertySet": "bkpi_Post_Beskrivelse",
+          "Unit": "m"
+        },
+        {
+          "Code": "Vind- og fugetering under svill-Lokalisering",
+          "PropertyCode": "Lokalisering",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Vind- og fugetering under svill-Type",
+          "PropertyCode": "Type",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Vind- og fugetering under svill-Materialkrav",
+          "PropertyCode": "Materialkrav",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Vind- og fugetering under svill-Bredde x tykkelse",
+          "PropertyCode": "Bredde x tykkelse",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Vind- og fugetering under svill-Underlag",
+          "PropertyCode": "Underlag",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Vind- og fugetering under svill-Andre krav",
+          "PropertyCode": "Andre krav",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcMaterial",
+          "RelatedClassName": "IfcMaterial"
+        }
+      ]
+    },
+    {
+      "Code": "Fuktm\u00e5ling i tre",
+      "Name": "Fuktm\u00e5ling i tre",
+      "ClassType": "Class",
+      "Definition": "Iht. NS 3420",
+      "Description": "Testing",
+      "RelatedIfcEntityNamesList": [
+        "IfcTaskTESTING"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "ClassProperties": [
+        {
+          "Code": "Fuktm\u00e5ling i tre-Antall m\u00e5linger",
+          "PropertyCode": "Antall m\u00e5linger",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Fuktm\u00e5ling i tre-Treprodukt",
+          "PropertyCode": "Treprodukt",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Fuktm\u00e5ling i tre-Lokalisering",
+          "PropertyCode": "Lokalisering",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Fuktm\u00e5ling i tre-M\u00e5letidspunkt-frekvens",
+          "PropertyCode": "M\u00e5letidspunkt-frekvens",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Fuktm\u00e5ling i tre-Andre krav",
+          "PropertyCode": "Andre krav",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcTaskTESTING",
+          "RelatedClassName": "IfcTaskTESTING"
+        }
+      ]
+    },
+    {
+      "Code": "Treproduct",
+      "Name": "Treproduct",
+      "ClassType": "Material",
+      "Definition": "Iht. NS 3420",
+      "RelatedIfcEntityNamesList": [
+        "IfcMaterial"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "ClassProperties": [
+        {
+          "Code": "Treproduct-Treprodukt",
+          "PropertyCode": "Treprodukt",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcMaterial",
+          "RelatedClassName": "IfcMaterial"
+        }
+      ]
+    },
+    {
+      "Code": "Svil av heltre for bjelkelag",
+      "Name": "Svil av heltre for bjelkelag",
+      "ClassType": "Material",
+      "Definition": "Iht. NS 3420",
+      "RelatedIfcEntityNamesList": [
+        "IfcMaterial"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "ClassProperties": [
+        {
+          "Code": "Svil av heltre for bjelkelag-Length",
+          "PropertyCode": "Length",
+          "PropertySet": "bkpi_Post_Beskrivelse",
+          "Unit": "m"
+        },
+        {
+          "Code": "Svil av heltre for bjelkelag-Fasthet-sortering",
+          "PropertyCode": "Fasthet-sortering",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Svil av heltre for bjelkelag-Dimension",
+          "PropertyCode": "Dimension",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Svil av heltre for bjelkelag-Forbehandling",
+          "PropertyCode": "Forbehandling",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Svil av heltre for bjelkelag-Lokalisering",
+          "PropertyCode": "Lokalisering",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Svil av heltre for bjelkelag-Underlag",
+          "PropertyCode": "Underlag",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        },
+        {
+          "Code": "Svil av heltre for bjelkelag-Andre krav",
+          "PropertyCode": "Andre krav",
+          "PropertySet": "bkpi_Post_Beskrivelse"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcMaterial",
+          "RelatedClassName": "IfcMaterial"
+        }
+      ]
+    }
+  ],
+  "Properties": [
+    {
+      "Code": "Type bindingsverk",
+      "Name": "Type bindingsverk",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "AllowedValues": [
+        {
+          "Code": "Type bindingsverk0",
+          "Value": "0 - Valgfritt",
+          "SortNumber": 0
+        },
+        {
+          "Code": "Type bindingsverk1",
+          "Value": "1 - Enklet",
+          "SortNumber": 1
+        },
+        {
+          "Code": "Type bindingsverk2",
+          "Value": "2 - Forskj\u00f8vet",
+          "SortNumber": 2
+        },
+        {
+          "Code": "Type bindingsverk3",
+          "Value": "3 - Dobbelt",
+          "SortNumber": 3
+        },
+        {
+          "Code": "Type bindingsverk4",
+          "Value": "4 - Dobbelt stendere",
+          "SortNumber": 4
+        },
+        {
+          "Code": "Type bindingsverk9",
+          "Value": "9 - Annen type bindingsverk - m\u00e5 spesifiseres",
+          "SortNumber": 5
+        }
+      ]
+    },
+    {
+      "Code": "Spikerslag",
+      "Name": "Spikerslag",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "AllowedValues": [
+        {
+          "Code": "Spikerslag0",
+          "Value": "0 - Valgfritt",
+          "SortNumber": 1
+        },
+        {
+          "Code": "Spikerslag1",
+          "Value": "1 - Horisontale c/c 600 mm",
+          "SortNumber": 2
+        },
+        {
+          "Code": "Spikerslag2",
+          "Value": "2 - Horisontale c/c 900 mm",
+          "SortNumber": 3
+        },
+        {
+          "Code": "Spikerslag3",
+          "Value": "3 - Horisontale c/c 1200 mm",
+          "SortNumber": 4
+        },
+        {
+          "Code": "Spikerslag8",
+          "Value": "8 - Uten",
+          "SortNumber": 5
+        },
+        {
+          "Code": "Spikerslag9",
+          "Value": "9 - Andre spikerslag - m\u00e5 spesifiseres",
+          "SortNumber": 6
+        }
+      ]
+    },
+    {
+      "Code": "Sperretype",
+      "Name": "Sperretype",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "AllowedValues": [
+        {
+          "Code": "Sperretype0",
+          "Value": "0 - Uspessifisert",
+          "SortNumber": 1
+        },
+        {
+          "Code": "Sperretype1",
+          "Value": "1 - Sperre",
+          "SortNumber": 2
+        },
+        {
+          "Code": "Sperretype2",
+          "Value": "2 - Gradsperre",
+          "SortNumber": 3
+        },
+        {
+          "Code": "Sperretype3",
+          "Value": "3 - Kilsperre",
+          "SortNumber": 4
+        },
+        {
+          "Code": "Sperretype4",
+          "Value": "4 - Skiftesperre",
+          "SortNumber": 5
+        },
+        {
+          "Code": "Sperretype5",
+          "Value": "5 - Nedfallsgrad",
+          "SortNumber": 6
+        },
+        {
+          "Code": "Sperretype9",
+          "Value": "9 - Annen sperretype - m\u00e5 spesifiseres",
+          "SortNumber": 7
+        }
+      ]
+    },
+    {
+      "Code": "Trelag",
+      "Name": "Trelag",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "AllowedValues": [
+        {
+          "Code": "Trelag00",
+          "Value": "00 - Valgfritt",
+          "SortNumber": 1
+        },
+        {
+          "Code": "Trelag11",
+          "Value": "11 - Furu",
+          "SortNumber": 2
+        },
+        {
+          "Code": "Trelag12",
+          "Value": "12 - Gran",
+          "SortNumber": 3
+        },
+        {
+          "Code": "Trelag13",
+          "Value": "13 - Lerk",
+          "SortNumber": 4
+        },
+        {
+          "Code": "Trelag14",
+          "Value": "14 - Osp",
+          "SortNumber": 5
+        },
+        {
+          "Code": "Trelag15",
+          "Value": "15 - Bj\u00f8rk",
+          "SortNumber": 6
+        },
+        {
+          "Code": "Trelag16",
+          "Value": "16 - Eik",
+          "SortNumber": 7
+        },
+        {
+          "Code": "Trelag17",
+          "Value": "17 - Ask",
+          "SortNumber": 8
+        },
+        {
+          "Code": "Trelag18",
+          "Value": "18 - B\u00f8k",
+          "SortNumber": 9
+        },
+        {
+          "Code": "Trelag99",
+          "Value": "99 - Annet trelag - m\u00e5 spesifiseres",
+          "SortNumber": 10
+        }
+      ]
+    },
+    {
+      "Code": "Forbehandling",
+      "Name": "Forbehandling",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "AllowedValues": [
+        {
+          "Code": "Forbehandling0",
+          "Value": "0 - Valgfritt",
+          "SortNumber": 1
+        },
+        {
+          "Code": "Forbehandling1",
+          "Value": "1 - Ubehandlet",
+          "SortNumber": 2
+        },
+        {
+          "Code": "Forbehandling2",
+          "Value": "2 - Trykkimpregnert",
+          "SortNumber": 3
+        },
+        {
+          "Code": "Forbehandling9",
+          "Value": "9 - Annen forbehandling - m\u00e5 spesifiseres",
+          "SortNumber": 4
+        }
+      ]
+    },
+    {
+      "Code": "Length",
+      "Name": "Length",
+      "Definition": "Iht. NS 3420",
+      "DataType": "Real",
+      "Units": [
+        "m"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "PropertyRelations": [
+        {
+          "RelatedPropertyName": "Length",
+          "RelatedPropertyUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/Length",
+          "RelationType": "IsEqualTo"
+        }
+      ]
+    },
+    {
+      "Code": "Lokalisering",
+      "Name": "Lokalisering",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO"
+    },
+    {
+      "Code": "Type fuktbeskyttelse",
+      "Name": "Type fuktbeskyttelse",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO"
+    },
+    {
+      "Code": "Materialkrav",
+      "Name": "Materialkrav",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO"
+    },
+    {
+      "Code": "Bredde x tykkelse",
+      "Name": "Bredde x tykkelse",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO"
+    },
+    {
+      "Code": "Underlag",
+      "Name": "Underlag",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO"
+    },
+    {
+      "Code": "Andre krav",
+      "Name": "Andre krav",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "AllowedValues": [
+        {
+          "Code": "Andre kravJ",
+          "Value": "Ja",
+          "SortNumber": 1
+        },
+        {
+          "Code": "Andre kravN",
+          "Value": "Nei",
+          "SortNumber": 2
+        }
+      ]
+    },
+    {
+      "Code": "Type",
+      "Name": "Type",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO"
+    },
+    {
+      "Code": "Antall m\u00e5linger",
+      "Name": "Antall m\u00e5linger",
+      "Definition": "Iht. NS 3420",
+      "DataType": "Integer",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO"
+    },
+    {
+      "Code": "Treprodukt",
+      "Name": "Treprodukt",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "AllowedValues": [
+        {
+          "Code": "Treprodukt0 ",
+          "Value": "0 - Uspessifisert",
+          "SortNumber": 1
+        },
+        {
+          "Code": "Treprodukt1 ",
+          "Value": "1 - Heltre",
+          "SortNumber": 2
+        },
+        {
+          "Code": "Treprodukt2 ",
+          "Value": "2 - Trebasert profil",
+          "SortNumber": 3
+        },
+        {
+          "Code": "Treprodukt3 ",
+          "Value": "3 - Limtre",
+          "SortNumber": 4
+        },
+        {
+          "Code": "Treprodukt4 ",
+          "Value": "4 - T\u00f8mmer/laft",
+          "SortNumber": 5
+        },
+        {
+          "Code": "Treprodukt5 ",
+          "Value": "5 - Massivtre",
+          "SortNumber": 6
+        },
+        {
+          "Code": "Treprodukt9 ",
+          "Value": "9 - Annet treprodukt - m\u00e5 spesifiseres",
+          "SortNumber": 7
+        }
+      ]
+    },
+    {
+      "Code": "M\u00e5letidspunkt-frekvens",
+      "Name": "M\u00e5letidspunkt -frekvens",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO"
+    },
+    {
+      "Code": "Fasthet-sortering",
+      "Name": "Fasthet-sortering",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "AllowedValues": [
+        {
+          "Code": "Fasthet-sortering0 ",
+          "Value": "0 - Valgfri",
+          "SortNumber": 8
+        },
+        {
+          "Code": "Fasthet-sortering1 ",
+          "Value": "1 - Fasthets-sorteringklasse C18/T1",
+          "SortNumber": 9
+        },
+        {
+          "Code": "Fasthet-sortering2 ",
+          "Value": "2 - Fasthets-sorteringklasse C24/T2",
+          "SortNumber": 10
+        },
+        {
+          "Code": "Fasthet-sortering3",
+          "Value": "3 - Fasthets-sorteringklasse C30/T3",
+          "SortNumber": 11
+        },
+        {
+          "Code": "Fasthet-sortering9",
+          "Value": "9 - Annen fasthet-sortering - m\u00e5 spesifiseres",
+          "SortNumber": 12
+        }
+      ]
+    },
+    {
+      "Code": "Dimension",
+      "Name": "Dimension",
+      "Definition": "Iht. NS 3420",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "AllowedValues": [
+        {
+          "Code": "Dimension00",
+          "Value": "00 - Valgfri",
+          "SortNumber": 1
+        },
+        {
+          "Code": "Dimension11",
+          "Value": "11 - 36 mm x 73 mm",
+          "SortNumber": 2
+        },
+        {
+          "Code": "Dimension12",
+          "Value": "12 - 36 mm x 98 mm",
+          "SortNumber": 3
+        },
+        {
+          "Code": "Dimension13",
+          "Value": "13 - 36 mm x 123 mm",
+          "SortNumber": 4
+        },
+        {
+          "Code": "Dimension14",
+          "Value": "14 - 36 mm x 148 mm",
+          "SortNumber": 5
+        },
+        {
+          "Code": "Dimension15",
+          "Value": "15 - 36 mm x 198 mm",
+          "SortNumber": 6
+        },
+        {
+          "Code": "Dimension16",
+          "Value": "16 - 36 mm x 223 mm",
+          "SortNumber": 7
+        },
+        {
+          "Code": "Dimension17",
+          "Value": "17 - 48 mm x 73 mm",
+          "SortNumber": 8
+        },
+        {
+          "Code": "Dimension18",
+          "Value": "18 - 48 mm x 98 mm",
+          "SortNumber": 9
+        },
+        {
+          "Code": "Dimension23",
+          "Value": "23 - 48 mm x 123 mm",
+          "SortNumber": 10
+        },
+        {
+          "Code": "Dimension24",
+          "Value": "24 - 48 mm x 148 mm",
+          "SortNumber": 11
+        },
+        {
+          "Code": "Dimension25",
+          "Value": "25 - 48 mm x 198 mm",
+          "SortNumber": 12
+        },
+        {
+          "Code": "Dimension26",
+          "Value": "26 - 48 mm x 223 mm",
+          "SortNumber": 13
+        },
+        {
+          "Code": "Dimension99",
+          "Value": "99 - Annen dimensjon - m\u00e5 spesifiseres",
+          "SortNumber": 14
+        }
+      ]
+    }
+  ]
+}

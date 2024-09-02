@@ -1,0 +1,940 @@
+{
+  "ModelVersion": "2.0",
+  "OrganizationCode": "byggkpi",
+  "DictionaryCode": "bkpi_noekkeltall",
+  "DictionaryName": "ByggKPI N\u00f8kkeltall",
+  "DictionaryVersion": "0.0",
+  "LanguageIsoCode": "nb-NO",
+  "LanguageOnly": false,
+  "UseOwnUri": false,
+  "ChangeRequestEmailAddress": "info@byggkpi.no",
+  "QualityAssuranceProcedure": "Use at own risk - this is for demo purposes only",
+  "ReleaseDate": "2024-08-31T00:00:00",
+  "Status": "Preview",
+  "Classes": [
+    {
+      "Code": "Prosjekt",
+      "Name": "Prosjekt",
+      "ClassType": "Class",
+      "Definition": "Prosjekts klass",
+      "RelatedIfcEntityNamesList": [
+        "IfcSpatialElement"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0,
+      "ClassProperties": [
+        {
+          "Code": "Prosjekt-Bruttoareal (BTA)",
+          "PropertyCode": "Bruttoareal (BTA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Bebygd areal (BYA)",
+          "PropertyCode": "Bebygd areal (BYA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Nettoareal (NTA)",
+          "PropertyCode": "Nettoareal (NTA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Kontruksjonsareal (KVA)",
+          "PropertyCode": "Kontruksjonsareal (KVA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Brukareal (BRA)",
+          "PropertyCode": "Brukareal (BRA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Prim\u00e6rareal (P-ROM)",
+          "PropertyCode": "Prim\u00e6rareal (P-ROM)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Sekund\u00e6rareal (S-SOM)",
+          "PropertyCode": "Sekund\u00e6rareal (S-SOM)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Salgbart brukareal (S-BRA)",
+          "PropertyCode": "Salgbart brukareal (S-BRA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Funksjonsareal (FUA)",
+          "PropertyCode": "Funksjonsareal (FUA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Kommunikasjonsareal (KOA)",
+          "PropertyCode": "Kommunikasjonsareal (KOA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Teknisk areal og driftsareal (TEA)",
+          "PropertyCode": "Teknisk areal og driftsareal (TEA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Omsluttende bygningsdeler (OBD)",
+          "PropertyCode": "Omsluttende bygningsdeler (OBD)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Renholdt areal (REA)",
+          "PropertyCode": "Renholdt areal (REA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Overbygd, \u00e5pent areal (OPA)",
+          "PropertyCode": "Overbygd, \u00e5pent areal (OPA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Bruttovolum (BTV)",
+          "PropertyCode": "Bruttovolum (BTV)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Bruttoareal kjeller (BTK)",
+          "PropertyCode": "Bruttoareal kjeller (BTK)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Prosjekt-Utvendig mark (UMA)",
+          "PropertyCode": "Utvendig mark (UMA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpatialElement",
+          "RelatedClassName": "IfcSpatialElement"
+        }
+      ]
+    },
+    {
+      "Code": "Delprosjekt",
+      "Name": "Delprosjekt",
+      "ClassType": "Class",
+      "Definition": "Delprosjekts klass",
+      "ParentClassCode": "Prosjekt",
+      "RelatedIfcEntityNamesList": [
+        "IfcSpatialZone"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0,
+      "ClassProperties": [
+        {
+          "Code": "Delprosjekt-Bruttoareal (BTA)",
+          "PropertyCode": "Bruttoareal (BTA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Bebygd areal (BYA)",
+          "PropertyCode": "Bebygd areal (BYA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Nettoareal (NTA)",
+          "PropertyCode": "Nettoareal (NTA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Kontruksjonsareal (KVA)",
+          "PropertyCode": "Kontruksjonsareal (KVA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Brukareal (BRA)",
+          "PropertyCode": "Brukareal (BRA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Prim\u00e6rareal (P-ROM)",
+          "PropertyCode": "Prim\u00e6rareal (P-ROM)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Sekund\u00e6rareal (S-SOM)",
+          "PropertyCode": "Sekund\u00e6rareal (S-SOM)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Salgbart brukareal (S-BRA)",
+          "PropertyCode": "Salgbart brukareal (S-BRA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Funksjonsareal (FUA)",
+          "PropertyCode": "Funksjonsareal (FUA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Kommunikasjonsareal (KOA)",
+          "PropertyCode": "Kommunikasjonsareal (KOA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Teknisk areal og driftsareal (TEA)",
+          "PropertyCode": "Teknisk areal og driftsareal (TEA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Omsluttende bygningsdeler (OBD)",
+          "PropertyCode": "Omsluttende bygningsdeler (OBD)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Renholdt areal (REA)",
+          "PropertyCode": "Renholdt areal (REA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Overbygd, \u00e5pent areal (OPA)",
+          "PropertyCode": "Overbygd, \u00e5pent areal (OPA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Bruttovolum (BTV)",
+          "PropertyCode": "Bruttovolum (BTV)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Bruttoareal kjeller (BTK)",
+          "PropertyCode": "Bruttoareal kjeller (BTK)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Delprosjekt-Utvendig mark (UMA)",
+          "PropertyCode": "Utvendig mark (UMA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSpatialZone",
+          "RelatedClassName": "IfcSpatialZone"
+        }
+      ]
+    },
+    {
+      "Code": "Bygning",
+      "Name": "Bygning",
+      "ClassType": "Class",
+      "Definition": "Bygnings klass",
+      "ParentClassCode": "Delprosjekt",
+      "RelatedIfcEntityNamesList": [
+        "IfcBuilding"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0,
+      "ClassProperties": [
+        {
+          "Code": "Bygning-Bruttoareal (BTA)",
+          "PropertyCode": "Bruttoareal (BTA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Bebygd areal (BYA)",
+          "PropertyCode": "Bebygd areal (BYA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Nettoareal (NTA)",
+          "PropertyCode": "Nettoareal (NTA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Kontruksjonsareal (KVA)",
+          "PropertyCode": "Kontruksjonsareal (KVA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Brukareal (BRA)",
+          "PropertyCode": "Brukareal (BRA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Prim\u00e6rareal (P-ROM)",
+          "PropertyCode": "Prim\u00e6rareal (P-ROM)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Sekund\u00e6rareal (S-SOM)",
+          "PropertyCode": "Sekund\u00e6rareal (S-SOM)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Salgbart brukareal (S-BRA)",
+          "PropertyCode": "Salgbart brukareal (S-BRA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Funksjonsareal (FUA)",
+          "PropertyCode": "Funksjonsareal (FUA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Kommunikasjonsareal (KOA)",
+          "PropertyCode": "Kommunikasjonsareal (KOA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Teknisk areal og driftsareal (TEA)",
+          "PropertyCode": "Teknisk areal og driftsareal (TEA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Omsluttende bygningsdeler (OBD)",
+          "PropertyCode": "Omsluttende bygningsdeler (OBD)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Renholdt areal (REA)",
+          "PropertyCode": "Renholdt areal (REA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Overbygd, \u00e5pent areal (OPA)",
+          "PropertyCode": "Overbygd, \u00e5pent areal (OPA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Bruttovolum (BTV)",
+          "PropertyCode": "Bruttovolum (BTV)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Bygning-Bruttoareal kjeller (BTK)",
+          "PropertyCode": "Bruttoareal kjeller (BTK)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuilding",
+          "RelatedClassName": "IfcBuilding"
+        }
+      ]
+    },
+    {
+      "Code": "Etasje",
+      "Name": "Etasje",
+      "ClassType": "Class",
+      "Definition": "Etasjes klass",
+      "ParentClassCode": "Bygning",
+      "RelatedIfcEntityNamesList": [
+        "IfcBuildingStorey"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0,
+      "ClassProperties": [
+        {
+          "Code": "Etasje-Bruttoareal (BTA)",
+          "PropertyCode": "Bruttoareal (BTA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Bebygd areal (BYA)",
+          "PropertyCode": "Bebygd areal (BYA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Nettoareal (NTA)",
+          "PropertyCode": "Nettoareal (NTA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Kontruksjonsareal (KVA)",
+          "PropertyCode": "Kontruksjonsareal (KVA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Brukareal (BRA)",
+          "PropertyCode": "Brukareal (BRA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Prim\u00e6rareal (P-ROM)",
+          "PropertyCode": "Prim\u00e6rareal (P-ROM)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Sekund\u00e6rareal (S-SOM)",
+          "PropertyCode": "Sekund\u00e6rareal (S-SOM)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Salgbart brukareal (S-BRA)",
+          "PropertyCode": "Salgbart brukareal (S-BRA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Funksjonsareal (FUA)",
+          "PropertyCode": "Funksjonsareal (FUA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Kommunikasjonsareal (KOA)",
+          "PropertyCode": "Kommunikasjonsareal (KOA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Teknisk areal og driftsareal (TEA)",
+          "PropertyCode": "Teknisk areal og driftsareal (TEA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Omsluttende bygningsdeler (OBD)",
+          "PropertyCode": "Omsluttende bygningsdeler (OBD)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Renholdt areal (REA)",
+          "PropertyCode": "Renholdt areal (REA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Overbygd, \u00e5pent areal (OPA)",
+          "PropertyCode": "Overbygd, \u00e5pent areal (OPA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Bruttovolum (BTV)",
+          "PropertyCode": "Bruttovolum (BTV)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "Etasje-Bruttoareal kjeller (BTK)",
+          "PropertyCode": "Bruttoareal kjeller (BTK)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcBuildingStorey",
+          "RelatedClassName": "IfcBuildingStorey"
+        }
+      ]
+    },
+    {
+      "Code": "Tomt",
+      "Name": "Tomt",
+      "ClassType": "Class",
+      "Definition": "Tomts klass",
+      "ParentClassCode": "Prosjekt",
+      "RelatedIfcEntityNamesList": [
+        "IfcSite"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0,
+      "ClassProperties": [
+        {
+          "Code": "Tomt-Utvendig mark (UMA)",
+          "PropertyCode": "Utvendig mark (UMA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        }
+      ],
+      "ClassRelations": [
+        {
+          "RelationType": "IsSimilarTo",
+          "RelatedClassUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/class/IfcSite",
+          "RelatedClassName": "IfcSite"
+        }
+      ]
+    },
+    {
+      "Code": "N\u00f8kkeltall",
+      "Name": "bkpi_N\u00f8kkeltall",
+      "ClassType": "GroupOfProperties",
+      "Definition": "Gruppe av n\u00f8kkeltall",
+      "RelatedIfcEntityNamesList": [],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0,
+      "ClassProperties": [
+        {
+          "Code": "N\u00f8kkeltall-Bruttoareal (BTA)",
+          "PropertyCode": "Bruttoareal (BTA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Bebygd areal (BYA)",
+          "PropertyCode": "Bebygd areal (BYA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Nettoareal (NTA)",
+          "PropertyCode": "Nettoareal (NTA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Kontruksjonsareal (KVA)",
+          "PropertyCode": "Kontruksjonsareal (KVA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Brukareal (BRA)",
+          "PropertyCode": "Brukareal (BRA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Prim\u00e6rareal (P-ROM)",
+          "PropertyCode": "Prim\u00e6rareal (P-ROM)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Sekund\u00e6rareal (S-SOM)",
+          "PropertyCode": "Sekund\u00e6rareal (S-SOM)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Salgbart brukareal (S-BRA)",
+          "PropertyCode": "Salgbart brukareal (S-BRA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Funksjonsareal (FUA)",
+          "PropertyCode": "Funksjonsareal (FUA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Kommunikasjonsareal (KOA)",
+          "PropertyCode": "Kommunikasjonsareal (KOA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Teknisk areal og driftsareal (TEA)",
+          "PropertyCode": "Teknisk areal og driftsareal (TEA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Omsluttende bygningsdeler (OBD)",
+          "PropertyCode": "Omsluttende bygningsdeler (OBD)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Renholdt areal (REA)",
+          "PropertyCode": "Renholdt areal (REA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Overbygd, \u00e5pent areal (OPA)",
+          "PropertyCode": "Overbygd, \u00e5pent areal (OPA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Bruttovolum (BTV)",
+          "PropertyCode": "Bruttovolum (BTV)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Bruttoareal kjeller (BTK)",
+          "PropertyCode": "Bruttoareal kjeller (BTK)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        },
+        {
+          "Code": "N\u00f8kkeltall-Utvendig mark (UMA)",
+          "PropertyCode": "Utvendig mark (UMA)",
+          "PropertySet": "bkpi_N\u00f8kkeltall",
+          "Unit": "m\u00b2"
+        }
+      ]
+    }
+  ],
+  "Properties": [
+    {
+      "Code": "Bruttoareal (BTA)",
+      "Name": "Bruttoareal (BTA)",
+      "Definition": "Iht. NS 3940",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0,
+      "PropertyRelations": [
+        {
+          "RelatedPropertyName": "Gross Planned Area",
+          "RelatedPropertyUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/GrossPlannedArea",
+          "RelationType": "IsSimilarTo"
+        }
+      ]
+    },
+    {
+      "Code": "Bebygd areal (BYA)",
+      "Name": "Bebygd areal (BYA)",
+      "Definition": "Iht. NS 3940",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Nettoareal (NTA)",
+      "Name": "Nettoareal (NTA)",
+      "Definition": "Iht. NS 3940",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0,
+      "PropertyRelations": [
+        {
+          "RelatedPropertyName": "Net Planned Area",
+          "RelatedPropertyUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/NetPlannedArea",
+          "RelationType": "IsSimilarTo"
+        }
+      ]
+    },
+    {
+      "Code": "Kontruksjonsareal (KVA)",
+      "Name": "Kontruksjonsareal (KVA)",
+      "Definition": "Iht. NS 3940",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Brukareal (BRA)",
+      "Name": "Brukareal (BRA)",
+      "Definition": "Iht. NS 3940",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Prim\u00e6rareal (P-ROM)",
+      "Name": "Prim\u00e6rareal (P-ROM)",
+      "Definition": "Iht. NS 3940",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Sekund\u00e6rareal (S-SOM)",
+      "Name": "Sekund\u00e6rareal (S-SOM)",
+      "Definition": "Iht. NS 3940",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Salgbart brukareal (S-BRA)",
+      "Name": "Salgbart brukareal (S-BRA)",
+      "Definition": "Iht. NS 3940",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Funksjonsareal (FUA)",
+      "Name": "Funksjonsareal (FUA)",
+      "Definition": "Iht. NS 3940",
+      "Description": "FUA = NTA - KOA - TEA",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Kommunikasjonsareal (KOA)",
+      "Name": "Kommunikasjonsareal (KOA)",
+      "Definition": "Iht. NS 3940",
+      "Description": "KOA = NTA - FUA - TEA",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Teknisk areal og driftsareal (TEA)",
+      "Name": "Teknisk areal og driftsareal (TEA)",
+      "Definition": "Iht. NS 3940",
+      "Description": "TEA = NTA - FUA - KOA",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Omsluttende bygningsdeler (OBD)",
+      "Name": "Omsluttende bygningsdeler (OBD)",
+      "Definition": "Iht. NS 3940",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Renholdt areal (REA)",
+      "Name": "Renholdt areal (REA)",
+      "Definition": "Iht. NS 3940",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Overbygd, \u00e5pent areal (OPA)",
+      "Name": "Overbygd, \u00e5pent areal (OPA)",
+      "Definition": "Iht. NS 3940",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Utvendig mark (UMA)",
+      "Name": "Utvendig mark (UMA)",
+      "Definition": "Iht. Norsk Priskbok",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0,
+      "PropertyRelations": [
+        {
+          "RelatedPropertyName": "Total Area",
+          "RelatedPropertyUri": "https://identifier.buildingsmart.org/uri/buildingsmart/ifc/4.3/prop/TotalArea",
+          "RelationType": "IsSimilarTo"
+        }
+      ]
+    },
+    {
+      "Code": "Bruttovolum (BTV)",
+      "Name": "Bruttovolum (BTV)",
+      "Definition": "Iht. Norsk Priskbok",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Bruttoareal kjeller (BTK)",
+      "Name": "Bruttoareal kjeller (BTK)",
+      "Definition": "Iht. Norsk Priskbok",
+      "DataType": "Real",
+      "Units": [
+        "m\u00b2"
+      ],
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    }
+  ]
+}

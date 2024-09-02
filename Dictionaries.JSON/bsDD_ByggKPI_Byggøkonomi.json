@@ -1,0 +1,702 @@
+{
+  "ModelVersion": "2.0",
+  "OrganizationCode": "byggkpi",
+  "DictionaryCode": "bkpi_byggoekonomi",
+  "DictionaryName": "ByggKPI Bygg\u00f8konomi",
+  "DictionaryVersion": "0.0",
+  "LanguageIsoCode": "nb-NO",
+  "LanguageOnly": false,
+  "UseOwnUri": false,
+  "ChangeRequestEmailAddress": "info@byggkpi.no",
+  "QualityAssuranceProcedure": "Use at own risk - this is for demo purposes only",
+  "ReleaseDate": "2024-08-31T00:00:00",
+  "Status": "Preview",
+  "Classes": [
+    {
+      "Code": "Kostnad",
+      "Name": "bkpi_Kostnad",
+      "ClassType": "GroupOfProperties",
+      "Definition": "Gruppe av parametere for \u00e5 st\u00f8tte spesifikasjon av kostnader iht. NS 3453",
+      "RelatedIfcEntityNamesList": [],
+      "VersionNumber": 0,
+      "ClassProperties": [
+        {
+          "Code": "Kostnad-Bygningsdelsnummer niv\u00e5 3",
+          "PropertyCode": "Bygningsdelsnummer niv\u00e5 3",
+          "PropertySet": "bkpi_Kostnad"
+        },
+        {
+          "Code": "Kostnad-Fagkapittelnummer niv\u00e5 2",
+          "PropertyCode": "Fagkapittelnummer niv\u00e5 2",
+          "PropertySet": "bkpi_Kostnad"
+        },
+        {
+          "Code": "Kostnad-Elementtype",
+          "PropertyCode": "Elementtype",
+          "PropertySet": "bkpi_Kostnad"
+        },
+        {
+          "Code": "Kostnad-Enhet",
+          "PropertyCode": "Enhet",
+          "PropertySet": "bkpi_Kostnad"
+        },
+        {
+          "Code": "Kostnad-Brannkrav",
+          "PropertyCode": "Brannkrav",
+          "PropertySet": "bkpi_Kostnad"
+        },
+        {
+          "Code": "Kostnad-Lydkrav",
+          "PropertyCode": "Lydkrav",
+          "PropertySet": "bkpi_Kostnad"
+        },
+        {
+          "Code": "Kostnad-Andre krav",
+          "PropertyCode": "Andre krav",
+          "PropertySet": "bkpi_Kostnad"
+        }
+      ]
+    },
+    {
+      "Code": "Beskrivelse",
+      "Name": "bkpi_Beskrivelse",
+      "ClassType": "GroupOfProperties",
+      "Definition": "Gruppe av parametere for \u00e5 st\u00f8tte utarbeidelser av beskrivelser iht. NS 3420",
+      "RelatedIfcEntityNamesList": [],
+      "VersionNumber": 0,
+      "ClassProperties": [
+        {
+          "Code": "Beskrivelse-Bygningsdelsnummer niv\u00e5 3",
+          "PropertyCode": "Bygningsdelsnummer niv\u00e5 3",
+          "PropertySet": "bkpi_Beskrivelse"
+        },
+        {
+          "Code": "Beskrivelse-Fagkapittelnummer niv\u00e5 2",
+          "PropertyCode": "Fagkapittelnummer niv\u00e5 2",
+          "PropertySet": "bkpi_Beskrivelse"
+        },
+        {
+          "Code": "Beskrivelse-Elementtype",
+          "PropertyCode": "Elementtype",
+          "PropertySet": "bkpi_Beskrivelse"
+        },
+        {
+          "Code": "Beskrivelse-Enhet",
+          "PropertyCode": "Enhet",
+          "PropertySet": "bkpi_Beskrivelse"
+        },
+        {
+          "Code": "Beskrivelse-Brannkrav",
+          "PropertyCode": "Brannkrav",
+          "PropertySet": "bkpi_Beskrivelse"
+        },
+        {
+          "Code": "Beskrivelse-Lydkrav",
+          "PropertyCode": "Lydkrav",
+          "PropertySet": "bkpi_Beskrivelse"
+        },
+        {
+          "Code": "Beskrivelse-Andre krav",
+          "PropertyCode": "Andre krav",
+          "PropertySet": "bkpi_Beskrivelse"
+        }
+      ]
+    }
+  ],
+  "Properties": [
+    {
+      "Code": "Bygningsdelsnummer niv\u00e5 3",
+      "Name": "Bygningsdelsnummer niv\u00e5 3",
+      "Definition": "Iht. NS 3451",
+      "DataType": "String",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0,
+      "AllowedValues": [
+        {
+          "Code": "B211",
+          "Value": "211 Klargj\u00f8ring av tomt "
+        },
+        {
+          "Code": "B212",
+          "Value": "212 Byggegrop"
+        },
+        {
+          "Code": "B213",
+          "Value": "213 Grunnforsterkning"
+        },
+        {
+          "Code": "B214",
+          "Value": "214 St\u00f8ttekonstruksjoner"
+        },
+        {
+          "Code": "B215",
+          "Value": "215 Pelefundamentering"
+        },
+        {
+          "Code": "B216",
+          "Value": "216 Direkte fundamentering"
+        },
+        {
+          "Code": "B217",
+          "Value": "217 Drenering"
+        },
+        {
+          "Code": "B218",
+          "Value": "218 Utstyr og komplettering for grunn og fundamenter"
+        },
+        {
+          "Code": "B219",
+          "Value": "219 Andre deler av gi\u2019unn og fundamenter"
+        },
+        {
+          "Code": "B221",
+          "Value": "221 Rammer"
+        },
+        {
+          "Code": "B222",
+          "Value": "222 S\u00f8yler"
+        },
+        {
+          "Code": "B223",
+          "Value": "223 Bjelker"
+        },
+        {
+          "Code": "B224",
+          "Value": "224 Avstivende konstruksjoner"
+        },
+        {
+          "Code": "B225",
+          "Value": "225 Brannbeskyttelse av b\u00e6rende konstruksjoner"
+        },
+        {
+          "Code": "B226",
+          "Value": "226 Kledning og overflate"
+        },
+        {
+          "Code": "B227",
+          "Value": "227 (Reservert)"
+        },
+        {
+          "Code": "B228",
+          "Value": "228 Utstyr og komplettering for b\u00e6rende l\u2039onstruksjoner"
+        },
+        {
+          "Code": "B229",
+          "Value": "229 Andre deler av b\u00e6rende konstruksjoner"
+        },
+        {
+          "Code": "B231",
+          "Value": "231 B\u00e6rende yttervegger"
+        },
+        {
+          "Code": "B232",
+          "Value": "232 Ikke-b\u00e6rende ytter vegger"
+        },
+        {
+          "Code": "B233",
+          "Value": "233 Glassfasader"
+        },
+        {
+          "Code": "B234",
+          "Value": "234 Vinduer, durer, porter"
+        },
+        {
+          "Code": "B235",
+          "Value": "235 Utvendig kledning og overflate"
+        },
+        {
+          "Code": "B236",
+          "Value": "236 lnnvendig overflate"
+        },
+        {
+          "Code": "B237",
+          "Value": "237 Solavskjerming"
+        },
+        {
+          "Code": "B238",
+          "Value": "238 Utstyr og komplettering for yttervegger"
+        },
+        {
+          "Code": "B239",
+          "Value": "239 Andre deler av yttervegg"
+        },
+        {
+          "Code": "B241",
+          "Value": "241 B\u00e6rende innervegger"
+        },
+        {
+          "Code": "B242",
+          "Value": "242 Ikke-b\u00e6rende innervegger"
+        },
+        {
+          "Code": "B243",
+          "Value": "243 Systemvegger og glassfelt"
+        },
+        {
+          "Code": "B244",
+          "Value": "244 Vinduer, d\u00f8rer, foldevegger"
+        },
+        {
+          "Code": "B245",
+          "Value": "245 Skj\u00f8rt"
+        },
+        {
+          "Code": "B246",
+          "Value": "246 Kledning og overflate"
+        },
+        {
+          "Code": "B247",
+          "Value": "247 (Reservert)"
+        },
+        {
+          "Code": "B248",
+          "Value": "248 Utstyr og komplettering for innervegger"
+        },
+        {
+          "Code": "B249",
+          "Value": "249 Andre deler av innervegg"
+        },
+        {
+          "Code": "B251",
+          "Value": "251 Frittb\u00e6rende dekker"
+        },
+        {
+          "Code": "B252",
+          "Value": "252 Gulv p\u00e0 grunn, bunnplate"
+        },
+        {
+          "Code": "B253",
+          "Value": "253 Oppf\u00f4ret gulv og p\u00e4stap"
+        },
+        {
+          "Code": "B254",
+          "Value": "254 Systemgulv"
+        },
+        {
+          "Code": "B255",
+          "Value": "255 Gulvoverflate"
+        },
+        {
+          "Code": "B256",
+          "Value": "256 Faste himlinger og overflatebehandling"
+        },
+        {
+          "Code": "B257",
+          "Value": "257 Systemhimlinger"
+        },
+        {
+          "Code": "B258",
+          "Value": "258 Utstyr og komplettering for dekker"
+        },
+        {
+          "Code": "B259",
+          "Value": "259 Andre deler av dekker"
+        },
+        {
+          "Code": "B261",
+          "Value": "261 Prim\u00e6rkonstruksjon for yttertak"
+        },
+        {
+          "Code": "B262",
+          "Value": "262 Taktekking"
+        },
+        {
+          "Code": "B263",
+          "Value": "263 Glasstak, overlys, takluker, riaykluker"
+        },
+        {
+          "Code": "B264",
+          "Value": "264 Takoppbygg"
+        },
+        {
+          "Code": "B265",
+          "Value": "265 Gesimser, takrenner og nedl\u00f8p"
+        },
+        {
+          "Code": "B266",
+          "Value": "266 Himling og innvendig overflate"
+        },
+        {
+          "Code": "B267",
+          "Value": "267 Prefabrikkerte takelementer"
+        },
+        {
+          "Code": "B268",
+          "Value": "268 Utstyr og kompletteringer for yttertak"
+        },
+        {
+          "Code": "B269",
+          "Value": "269 Andre deler av yttertak"
+        },
+        {
+          "Code": "B271",
+          "Value": "271 Murte piper og ildsteder"
+        },
+        {
+          "Code": "B272",
+          "Value": "272 Monteringsferdige ildsteder"
+        },
+        {
+          "Code": "B273",
+          "Value": "273 Kj\u00f8kkeninnredning"
+        },
+        {
+          "Code": "B274",
+          "Value": "274 Innredning og garnityr for v\u00e5trom"
+        },
+        {
+          "Code": "B275",
+          "Value": "275 Skap og reoler"
+        },
+        {
+          "Code": "B276",
+          "Value": "276 Sittebenker, stolrader, bord"
+        },
+        {
+          "Code": "B277",
+          "Value": "277 Skilt og tavler"
+        },
+        {
+          "Code": "B278",
+          "Value": "278 Utstyr og kompletteringer for fast inventar"
+        },
+        {
+          "Code": "B279",
+          "Value": "279 Annet fast inventar"
+        },
+        {
+          "Code": "B281",
+          "Value": "281 lnnvendige trapper"
+        },
+        {
+          "Code": "B282",
+          "Value": "282 Utvendige trapper"
+        },
+        {
+          "Code": "B283",
+          "Value": "283 Ramper"
+        },
+        {
+          "Code": "B284",
+          "Value": "284 Balkonger og verandaer"
+        },
+        {
+          "Code": "B285",
+          "Value": "285 Tribuner og amfier"
+        },
+        {
+          "Code": "B286",
+          "Value": "286 Baldakiner og skjermtak"
+        },
+        {
+          "Code": "B287",
+          "Value": "287 Andre rekkverk, handlister og fendere"
+        },
+        {
+          "Code": "B288",
+          "Value": "288 Utstyr og kompletteringer for trapper, balkonger m.rir."
+        },
+        {
+          "Code": "B289",
+          "Value": "289 Andre trapper, balkonger m.m."
+        },
+        {
+          "Code": "B291",
+          "Value": "291 Hull, tettinger"
+        }
+      ]
+    },
+    {
+      "Code": "Fagkapittelnummer niv\u00e5 2",
+      "Name": "Fagkapittelnummer niv\u00e5 2",
+      "Definition": "Iht. NS 3450",
+      "DataType": "String",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0,
+      "AllowedValues": [
+        {
+          "Code": "F00",
+          "Value": "00 Generelt"
+        },
+        {
+          "Code": "F01",
+          "Value": "01 Etablering, drift og avvikling av bygge- eller anleggsplassen"
+        },
+        {
+          "Code": "F02",
+          "Value": "02 Riving og klargj\u00f8ring av tomt"
+        },
+        {
+          "Code": "F03",
+          "Value": "03 Grunnarbeider"
+        },
+        {
+          "Code": "F04",
+          "Value": "04 Tverrfaglige byggearbeider"
+        },
+        {
+          "Code": "F05",
+          "Value": "05 Betongarbeider"
+        },
+        {
+          "Code": "F06",
+          "Value": "06 Betongkonstruksjoner, prefabrikerte"
+        },
+        {
+          "Code": "F07",
+          "Value": "07 St\u00e5lkonstruksjoner"
+        },
+        {
+          "Code": "F08",
+          "Value": "08 B\u00e6rende konstruksjoner i andre materialer, prefabrikkerte"
+        },
+        {
+          "Code": "F09",
+          "Value": "09 Murerarbeider"
+        },
+        {
+          "Code": "F10",
+          "Value": "10 Flisarbeider"
+        },
+        {
+          "Code": "F11",
+          "Value": "11 Natursteinsarbeider"
+        },
+        {
+          "Code": "F12",
+          "Value": "12 T\u00f8merarbeider"
+        },
+        {
+          "Code": "F13",
+          "Value": "13 Snekkerarbeider"
+        },
+        {
+          "Code": "F14",
+          "Value": "14 Vindusabeider"
+        },
+        {
+          "Code": "F15",
+          "Value": "15 D\u00f8rarbeider"
+        },
+        {
+          "Code": "F16",
+          "Value": "16 L\u00e5ser og beslag"
+        },
+        {
+          "Code": "F17",
+          "Value": "17 Tekkearbeider"
+        },
+        {
+          "Code": "F18",
+          "Value": "18 Blikkenslagerarbeider"
+        },
+        {
+          "Code": "F19",
+          "Value": "19 Metallarbeid"
+        },
+        {
+          "Code": "F20",
+          "Value": "20 Glassarbeider"
+        },
+        {
+          "Code": "F21",
+          "Value": "21 Malerarbeider"
+        },
+        {
+          "Code": "F22",
+          "Value": "22 Byggtapetsering"
+        },
+        {
+          "Code": "F23",
+          "Value": "23 Himlingsarbeider"
+        },
+        {
+          "Code": "F24",
+          "Value": "24 Fast bygginnredning"
+        },
+        {
+          "Code": "F25",
+          "Value": "25 Bygningsmessig arbeid for VVS-installasjoner"
+        },
+        {
+          "Code": "F26",
+          "Value": "26 Bygningmessig arbeid for elektroinstallasjoner"
+        },
+        {
+          "Code": "F27",
+          "Value": "27 Bygningsmessig arbeid for andre tekniske installasjoner"
+        },
+        {
+          "Code": "F28",
+          "Value": "28 Riving ved ombygging og rehabilitering"
+        },
+        {
+          "Code": "F29",
+          "Value": "29 Diverse bygningsmessig arbeid"
+        },
+        {
+          "Code": "F30",
+          "Value": "30 VVS-installasjoner"
+        },
+        {
+          "Code": "F40",
+          "Value": "40 Elkraftistallasjoner"
+        },
+        {
+          "Code": "F50",
+          "Value": "50 Tele- og automatiseringsinstallasjoner"
+        },
+        {
+          "Code": "F60",
+          "Value": "60 Andre tekniske installasjoner"
+        },
+        {
+          "Code": "F71",
+          "Value": "71 Anleggsgartnerarbeider"
+        },
+        {
+          "Code": "F72",
+          "Value": "72 Asfalt- og dekkearbeider"
+        },
+        {
+          "Code": "F73",
+          "Value": "73 Sporarbeider"
+        },
+        {
+          "Code": "F80",
+          "Value": "80 Inventar"
+        },
+        {
+          "Code": "F90",
+          "Value": "90 Diverse"
+        }
+      ]
+    },
+    {
+      "Code": "Elementtype",
+      "Name": "Elementtype",
+      "Definition": "Unik type for mengdeberegning",
+      "DataType": "String",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Enhet",
+      "Name": "Enhet",
+      "Definition": "Enhet for mengdeberegning",
+      "DataType": "String",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0,
+      "AllowedValues": [
+        {
+          "Code": "m",
+          "Value": "m"
+        },
+        {
+          "Code": "lm",
+          "Value": "lm"
+        },
+        {
+          "Code": "m2",
+          "Value": "m2"
+        },
+        {
+          "Code": "m3",
+          "Value": "m3"
+        },
+        {
+          "Code": "mm",
+          "Value": "mm"
+        },
+        {
+          "Code": "cm",
+          "Value": "cm"
+        },
+        {
+          "Code": "km",
+          "Value": "km"
+        },
+        {
+          "Code": "kg",
+          "Value": "kg"
+        },
+        {
+          "Code": "RS",
+          "Value": "RS"
+        },
+        {
+          "Code": "stk",
+          "Value": "stk"
+        },
+        {
+          "Code": "tonn",
+          "Value": "tonn"
+        },
+        {
+          "Code": "time",
+          "Value": "time"
+        },
+        {
+          "Code": "uke",
+          "Value": "uke"
+        },
+        {
+          "Code": "REG",
+          "Value": "REG"
+        }
+      ]
+    },
+    {
+      "Code": "Brannkrav",
+      "Name": "Brannkrav",
+      "Definition": "Brann motstand",
+      "DataType": "String",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Lydkrav",
+      "Name": "Lydkrav",
+      "Definition": "Lyd motstand",
+      "DataType": "String",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    },
+    {
+      "Code": "Andre krav",
+      "Name": "Andre krav",
+      "Definition": "Andre krav",
+      "DataType": "String",
+      "CountriesOfUse": [
+        "NO"
+      ],
+      "CountryOfOrigin": "NO",
+      "CreatorLanguageIsoCode": "nb-NO",
+      "VersionNumber": 0
+    }
+  ]
+}
