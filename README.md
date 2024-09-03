@@ -4,7 +4,7 @@
 
 This project is testing the use of [buildinSMART](https://technical.buildingsmart.org/) data dictionaries ([bsDD](https://technical.buildingsmart.org/services/bsdd/)) to enrich Building Information Modelling ([BIM](https://en.wikipedia.org/wiki/Building_information_modeling)).
 
-Three dictionaries are under test to evaluate the interaction of bsDD and integrating them with modelling tools:
+Three dictionaries are under test to evaluate the interaction of bsDD and integrating them with [modelling tools](https://technical.buildingsmart.org/resources/software-implementations/?filter_5=bSDD+IFC+export+%28including+URIs%29&mode=any):
 
 [ByggKPI Nøkkeltall](https://search.bsdd.buildingsmart.org/uri/byggkpi/bkpi_noekkeltall/0.0) - The goal is to test the possibility to enrich the model at the higher and more abstract level of elements, as an example: building, floor, spaces.
 
