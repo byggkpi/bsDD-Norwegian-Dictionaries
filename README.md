@@ -1,4 +1,4 @@
-<img src="Documents/Logo Black.png" alt="ByggKPI Logo" style="width: 200px" />  
+<img src="Documents/Logo Black.jpg" alt="ByggKPI Logo" style="width: 200px" />  
 
 # bsDD Norwegian Dictionaries
 
